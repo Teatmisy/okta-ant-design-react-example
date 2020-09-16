@@ -15,6 +15,14 @@ Make sure you have the dependencies by running:
 npm install
 ```
 
+Add your Okta credentials:
+
+```properties
+REACT_APP_OKTA_CLIENTID={yourClientId}
+REACT_APP_OKTA_URL_BASE={yourOktaDomain}
+REACT_APP_OKTA_APP_BASE_URL=http://localhost:3000
+```
+
 Start the application with:
 
 ```sh
