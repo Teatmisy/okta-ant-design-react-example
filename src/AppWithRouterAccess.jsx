@@ -15,7 +15,7 @@ const AppWithRouterAccess = () => {
     const baseDomain = process.env.REACT_APP_OKTA_URL_BASE;
     const issuer = baseDomain + '/oauth2/default'
     const clientId = process.env.REACT_APP_OKTA_CLIENTID;
-    const redirect = process.env.REACT_APP_OKTA_APP_BASE_URL + '/implicit/callback';
+    const redirect = process.env.REACT_APP_OKTA_APP_BASE_URL + '/login/callback';
 
     return (
         <Security issuer={issuer}
@@ -26,7 +26,7 @@ const AppWithRouterAccess = () => {
             <Route path='/' exact={true} component={Home} />
             <Route path='/login' render={() => <Login baseUrl={baseDomain} issuer={issuer} />} />
             <SecureRoute path='/Dashboard' exact={true} component={Dashboard} />
-            <Route path='/implicit/callback' component={LoginCallback} />
+            <Route path='/login/callback' component={LoginCallback} />
         </Security>
     );
 };
