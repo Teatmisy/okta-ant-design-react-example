@@ -15,7 +15,7 @@ Make sure you have the dependencies by running:
 npm install
 ```
 
-Add your Okta credentials:
+Add your Okta credentials to a `.env` file:
 
 ```properties
 REACT_APP_OKTA_CLIENTID={yourClientId}
