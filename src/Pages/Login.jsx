@@ -21,7 +21,7 @@ const Login = ({ baseUrl, issuer }) => {
     <Redirect to={{ pathname: '/Dashboard' }} /> :
     <Layout>
       <SiteHeader selectedKey="login"></SiteHeader>
-      <Content>
+      <Content style={{ padding: 40 }}>
         <LoginForm baseUrl={baseUrl} issuer={issuer} />
       </Content>
 
